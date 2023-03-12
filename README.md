@@ -29,5 +29,5 @@ There are no controls. Just run the app and wait for it to complete. Progress is
 
 cy33hc for the original [copyicons](https://github.com/cy33hc/copyicons) app.
 
-Thx to theFlow for Vitashell. I had copied the modules from Vitashell needed to pfs mount the game to decypt the content.
+Thx to theFlow for Vitashell. cy33hc copied the modules from Vitashell needed to pfs mount the game to decypt the content.
 https://github.com/TheOfficialFloW/VitaShell

@@ -13,17 +13,19 @@ In addition to copying the icon0.png/pic0.png to the appmeta folders, the app al
 * icon0 is copied to the RetroFlow ux0 data folder as a backup image for when the appmeta image isn't available.
 * In order of priority: pic0, bg, bg0 are copied to the RetroFlow ux0 data folder for use as game background images.
 
-There is no release for this, the eboot is bundled in with the [RetroFlow](https://github.com/jimbob4000/RetroFlow-Launcher) app.
+
 
 ## Features
 
 1. Decrypt the icon0.png/pic0.png and copy to ur0:appmeta.
 2. Like mentioned this app scans every game in the ux0:app folder and copies the icon0.png/pic0.png if it's not found in ur0:appmeta
-3. Copy the icon0.png/pic0.png/bg.png/bg0.png to the RetroFlow ux0 data folder.
+3. Copy the icon0.png/pic0.png/bg.png/bg0.png to the RetroFlow ux0 data folder named using the app TitleID as a filename.
 
 
-## Controls
-There are no controls. Just run the app and wait for it to complete. Progress is shown on the screen.
+## Useage
+There is no release for this, the eboot is bundled in with the [RetroFlow](https://github.com/jimbob4000/RetroFlow-Launcher) app.
+
+For use as a standalone vpk, the code would need to be modified to create directories outside of RetroFlow.
 
 ## Credits
 

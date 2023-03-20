@@ -128,63 +128,63 @@ int main(int argc, char *argv[]) {
 
 				// Copy bg
 
-					// Check ux0 for bg pic
-					int bg_path_exists = checkFileExist(bg_path);
+					// // Check ux0 for bg pic
+					// int bg_path_exists = checkFileExist(bg_path);
 
-					// Check RetroFlow folder for image
-					int retroflow_bg_path_exists_after_copy = checkFileExist(retroflow_bg_path);
+					// // Check RetroFlow folder for image
+					// int retroflow_bg_path_exists_after_copy = checkFileExist(retroflow_bg_path);
 
-					// Copy bg if there's no image in the RetroFlow folder
-					if (pfs_path_exists && ((bg_path_exists && !retroflow_bg_path_exists_after_copy) || (bg_path_exists && !retroflow_bg_path_exists_after_copy)))
-					{
-						if (pfsMount(game_path) == 0)
-						{
-							if (bg_path_exists && !retroflow_bg_path_exists_after_copy)
-							{
-								copyFile(bg_path, retroflow_bg_path, NULL);
-								printf("copied %s to %s\n", bg_path, retroflow_bg_path);
-							}
-							pfsUmount();
-						}
-					}
-					else if ((bg_path_exists && !retroflow_bg_path_exists_after_copy) || (bg_path_exists && !retroflow_bg_path_exists_after_copy))
-					{
-						if (bg_path_exists && !retroflow_bg_path_exists_after_copy)
-						{
-							copyFile(bg_path, retroflow_bg_path, NULL);
-							printf("copied %s to %s\n", bg_path, retroflow_bg_path);
-						}
-					}
+					// // Copy bg if there's no image in the RetroFlow folder
+					// if (pfs_path_exists && ((bg_path_exists && !retroflow_bg_path_exists_after_copy) || (bg_path_exists && !retroflow_bg_path_exists_after_copy)))
+					// {
+					// 	if (pfsMount(game_path) == 0)
+					// 	{
+					// 		if (bg_path_exists && !retroflow_bg_path_exists_after_copy)
+					// 		{
+					// 			copyFile(bg_path, retroflow_bg_path, NULL);
+					// 			printf("copied %s to %s\n", bg_path, retroflow_bg_path);
+					// 		}
+					// 		pfsUmount();
+					// 	}
+					// }
+					// else if ((bg_path_exists && !retroflow_bg_path_exists_after_copy) || (bg_path_exists && !retroflow_bg_path_exists_after_copy))
+					// {
+					// 	if (bg_path_exists && !retroflow_bg_path_exists_after_copy)
+					// 	{
+					// 		copyFile(bg_path, retroflow_bg_path, NULL);
+					// 		printf("copied %s to %s\n", bg_path, retroflow_bg_path);
+					// 	}
+					// }
 
 				// Copy bg0
 
-					// Check ux0 for bg0 pic
-					int bg0_path_exists = checkFileExist(bg0_path);
+					// // Check ux0 for bg0 pic
+					// int bg0_path_exists = checkFileExist(bg0_path);
 
-					// Check RetroFlow folder for image
-					int retroflow_bg_path_exists_after_copy2 = checkFileExist(retroflow_bg_path);
+					// // Check RetroFlow folder for image
+					// int retroflow_bg_path_exists_after_copy2 = checkFileExist(retroflow_bg_path);
 
-					// Copy bg0 if there's no image in the RetroFlow folder
-					if (pfs_path_exists && ((bg0_path_exists && !retroflow_bg_path_exists_after_copy2) || (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)))
-					{
-						if (pfsMount(game_path) == 0)
-						{
-							if (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)
-							{
-								copyFile(bg0_path, retroflow_bg_path, NULL);
-								printf("copied %s to %s\n", bg0_path, retroflow_bg_path);
-							}
-							pfsUmount();
-						}
-					}
-					else if ((bg0_path_exists && !retroflow_bg_path_exists_after_copy2) || (bg0_path_exists && !retroflow_bg_path_exists_after_copy2))
-					{
-						if (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)
-						{
-							copyFile(bg0_path, retroflow_bg_path, NULL);
-							printf("copied %s to %s\n", bg0_path, retroflow_bg_path);
-						}
-					}
+					// // Copy bg0 if there's no image in the RetroFlow folder
+					// if (pfs_path_exists && ((bg0_path_exists && !retroflow_bg_path_exists_after_copy2) || (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)))
+					// {
+					// 	if (pfsMount(game_path) == 0)
+					// 	{
+					// 		if (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)
+					// 		{
+					// 			copyFile(bg0_path, retroflow_bg_path, NULL);
+					// 			printf("copied %s to %s\n", bg0_path, retroflow_bg_path);
+					// 		}
+					// 		pfsUmount();
+					// 	}
+					// }
+					// else if ((bg0_path_exists && !retroflow_bg_path_exists_after_copy2) || (bg0_path_exists && !retroflow_bg_path_exists_after_copy2))
+					// {
+					// 	if (bg0_path_exists && !retroflow_bg_path_exists_after_copy2)
+					// 	{
+					// 		copyFile(bg0_path, retroflow_bg_path, NULL);
+					// 		printf("copied %s to %s\n", bg0_path, retroflow_bg_path);
+					// 	}
+					// }
 
 		}
 	} while (res > 0);

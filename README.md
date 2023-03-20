@@ -11,7 +11,7 @@ The psvita can only load 500 bubbles. If you have more then 500 apps/games insta
 In addition to copying the icon0.png/pic0.png to the appmeta folders, the app also copies additional images into the RetroFlow ux0 data folder.
 
 * icon0 is copied to the RetroFlow ux0 data folder as a backup image for when the appmeta image isn't available.
-* In order of priority: pic0, bg, bg0 are copied to the RetroFlow ux0 data folder for use as game background images.
+* pic0 is also copied to the RetroFlow ux0 data folder for use as game background images.
 
 
 
@@ -19,7 +19,7 @@ In addition to copying the icon0.png/pic0.png to the appmeta folders, the app al
 
 1. Decrypt the icon0.png/pic0.png and copy to ur0:appmeta.
 2. Like mentioned this app scans every game in the ux0:app folder and copies the icon0.png/pic0.png if it's not found in ur0:appmeta
-3. Copy the icon0.png/pic0.png/bg.png/bg0.png to the RetroFlow ux0 data folder named using the app TitleID as a filename.
+3. Copy the icon0.png/pic0.png to the RetroFlow ux0 data folder named using the app TitleID as a filename.
 
 
 ## Useage
